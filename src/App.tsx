@@ -1,8 +1,9 @@
+import Navbar from "./components/Navbar"
 
 function App() {
   return (
-    <div>
-      App
+    <div className="w-full h-screen font-satoshi-variable bg-zinc-900 text-white">
+      <Navbar />
     </div>
   )
 }
