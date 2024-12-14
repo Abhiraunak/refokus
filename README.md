@@ -30,8 +30,8 @@ The project doesn't serve a specific purpose but provides a foundation to build 
 ## Tech Stack
 - **React**: A JavaScript library for building user interfaces.
 - **Vite**: A fast frontend build tool.
-- **JavaScript (ES6+)**: For scripting.
-- **CSS**: For styling.
+- **TypeScript**: For scripting.
+- **Tailwind CSS**: For styling.
 
 ---
 
