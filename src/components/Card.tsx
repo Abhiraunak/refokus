@@ -1,5 +1,5 @@
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
-function Card({ width, start, para , hover}) {
+function Card({ width, start, para, hover }) {
     return (
         <div className={` bg-zinc-800 p-5 rounded-xl ${width} hover:${hover} min-h-[30rem] flex flex-col justify-between`}>
             <div className="w-full">
