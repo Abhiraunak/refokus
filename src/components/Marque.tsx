@@ -1,31 +1,11 @@
-
-import { motion } from "framer-motion";
-
-function Marquee({ imagesurls, direction }) {
+function Marque({imageurls}) {
   return (
-    <div className="flex w-full overflow-hidden">
-      <motion.div
-        initial={{ x: direction === "left" ? "0" : "-100%" }}
-        animate={{ x: direction === "left" ? "-100%" : "0" }}
-        transition={{ repeat: Infinity, ease: "linear", duration: 40 }}
-        className="flex flex-shrink-0 gap-40 py-10 pr-40"
-      >
-        {imagesurls.map((url, index) => (
-          <img key={index} src={url} className="" />
-        ))}
-      </motion.div>
-      <motion.div
-        initial={{ x: direction === "left" ? "0" : "-100%" }}
-        animate={{ x: direction === "left" ? "-100%" : "0" }}
-        transition={{ repeat: Infinity, ease: "linear", duration: 40 }}
-        className="flex flex-shrink-0 gap-40 py-10 pr-40"
-      >
-        {imagesurls.map((url, index) => (
-          <img key={index} src={url} className="" />
-        ))}
-      </motion.div>
+    <div className="flex w-ull py-5 gap-16 whitespace-nowrap overflow-hidden">
+      {imageurls.map(url => <img src={url} alt="images" className="flex-shrink-0 w-[6vw]"/>)}
+      {imageurls.map(url => <img src={url} alt="images" className=""/>)}
     </div>
+    
   );
 }
 
-export default Marquee;
+export default Marque;

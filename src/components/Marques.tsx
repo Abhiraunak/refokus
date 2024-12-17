@@ -1,6 +1,6 @@
 
 import Marque from "./Marque";
-function Marquees() {
+function Marques() {
   const images = [
     [
       "https://assets-global.website-files.com/6334198f239547d0f9cd84b3/65b2d275e12177716cb3f2ea_basf.svg",
@@ -27,12 +27,10 @@ function Marquees() {
     ],
   ];
   return (
-    <div className="py-20 mt-32 w-full relative overflow-hidden">
-      {images.map((item, index) => (
-        <Marque key={index} direction={index===0 ? "left" : "right"} imagesurls={item} />
-      ))}
+    <div className="mt-20">
+      {images.map(item => <Marque imageurls={item}/>)}
     </div>
   );
 }
 
-export default Marquees;
+export default Marques;
