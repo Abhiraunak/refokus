@@ -12,7 +12,7 @@ This project is a simple React application bootstrapped using [Vite](https://vit
   - [Installation](#installation)
   - [Running the Project Locally](#running-the-project-locally)
 - [Project Structure](#project-structure)
-- [License](#license)
+
 
 ---
 
@@ -80,11 +80,11 @@ react-vite-practice/
 ├── public/             # Static assets (e.g., images, fonts)
 ├── src/                # Source files
 │   ├── components/     # React components
-│   ├── App.jsx         # Main app component
+│   ├── App.tsx         # Main app component
 │   ├── index.css       # Global styles
-│   ├── main.jsx        # Entry point
+│   ├── main.tsx        # Entry point
 ├── .gitignore          # Files to ignore in Git
 ├── package.json        # Project metadata and scripts
 ├── README.md           # Project documentation
-├── vite.config.js      # Vite configuration
+├── vite.config.ts      # Vite configuration
 ```
