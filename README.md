@@ -86,5 +86,5 @@ react-vite-practice/
 ├── .gitignore          # Files to ignore in Git
 ├── package.json        # Project metadata and scripts
 ├── README.md           # Project documentation
-├── vite.config.js      # Vite configuration
+├── vite.config.ts      # Vite configuration
 ```
