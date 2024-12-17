@@ -1,7 +1,12 @@
+import { motion } from "framer-motion";
 import { HiMiniArrowSmallRight } from "react-icons/hi2";
-function Card({ width, start, para, hover }) {
+function Card({ width, start, para, hover = "false" }) {
     return (
-        <div className={` bg-zinc-800 p-5 rounded-xl ${width} hover:${hover} min-h-[30rem] flex flex-col justify-between`}>
+        <motion.div whileHover={{
+            backgroundColor: hover === "true" && "#7443ff",
+            padding: "25px",
+        }} className={`bg-zinc-800 p-5 rounded-xl ${width}  min-h-[30rem] flex flex-col justify-between`}>
+
             <div className="w-full">
                 <div className="flex justify-between items-center">
                     <h3>heading one</h3>
@@ -22,7 +27,7 @@ function Card({ width, start, para, hover }) {
                     </>
                 )}
             </div>
-        </div>
+        </motion.div>
     )
 }
 
