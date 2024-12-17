@@ -1,3 +1,4 @@
+import Cards from "./components/Cards"
 import Marques from "./components/Marques"
 import Navbar from "./components/Navbar"
 import Products from "./components/Products"
@@ -12,6 +13,7 @@ function App() {
       <Stripes />
       <Products />
       <Marques />
+      <Cards />
     </div>
   )
 }

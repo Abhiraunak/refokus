@@ -28,7 +28,7 @@ function Marques() {
   ];
   return (
     <div className="mt-20">
-      {images.map(item => <Marque imageurls={item}/>)}
+      {images.map(item => <Marque imageurls={item} />)}
     </div>
   );
 }
